@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-pink-600/45 p-4 gap-4 justify-between">
+  <div class="flex p-4 gap-4 items-center justify-between">
     <div class="flex gap-4">
       <span>Accueil</span>
       <span>A propos</span>
@@ -8,9 +8,8 @@
       <span>Contact</span>
     </div>
     <div class="flex gap-4">
-      <span>Logo 1 </span>
-      <span>Logo 2</span>
-      <span>Logo 3</span>
+      <img src="@/assets/icons/git.svg" alt="" class="size-16" />
+      <img src="@/assets/icons/link.svg" alt="" class="size-16" />
     </div>
   </div>
 </template>
