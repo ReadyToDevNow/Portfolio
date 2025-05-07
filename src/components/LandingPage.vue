@@ -37,7 +37,7 @@ function sendMail() {
         </button>
       </div>
     </main>
-    <footer class="bg-gray-800 shadow-sm dark:bg-gray-800 mt-auto">
+    <footer>
       <MyFooter />
     </footer>
   </body>
