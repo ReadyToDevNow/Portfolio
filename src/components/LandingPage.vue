@@ -1,6 +1,10 @@
 <script setup>
 import MyHeader from './MyHeader.vue'
 import MyFooter from './MyFooter.vue'
+
+function GithubLink() {
+  window.open('https://github.com/ReadyToDevNow', '_blank')
+}
 </script>
 
 <template>
@@ -19,7 +23,7 @@ import MyFooter from './MyFooter.vue'
       </div>
       <div class="flex gap-2">
         <button class="p-6">Mes Projets</button>
-        <button class="p-6">Github</button>
+        <button @click="GithubLink" class="p-6">Github</button>
         <button class="p-6">Contact</button>
       </div>
     </main>
