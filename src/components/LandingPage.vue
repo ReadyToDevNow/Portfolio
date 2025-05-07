@@ -2,8 +2,11 @@
 import MyHeader from './MyHeader.vue'
 import MyFooter from './MyFooter.vue'
 
-function GithubLink() {
+function githubLink() {
   window.open('https://github.com/ReadyToDevNow', '_blank')
+}
+function sendMail() {
+  window.location.href = 'mailto:sekourimehdi@gmail.com'
 }
 </script>
 
@@ -21,10 +24,17 @@ function GithubLink() {
         <span>Passionné de longue date,</span>
         <span>Spécialiste en Vue Js</span>
       </div>
-      <div class="flex gap-2">
-        <button class="p-6">Mes Projets</button>
-        <button @click="GithubLink" class="p-6">Github</button>
-        <button class="p-6">Contact</button>
+      <!--Section Buttons -->
+      <div class="flex gap-4">
+        <button>Mes Projets</button>
+        <button @click="githubLink" class="flex gap-2 items-center">
+          <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
+          <span>Github</span>
+        </button>
+        <button @click="sendMail" class="flex gap-2 items-center">
+          <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
+          <span>Contact</span>
+        </button>
       </div>
     </main>
     <footer class="bg-gray-800 shadow-sm dark:bg-gray-800 mt-auto">
@@ -38,6 +48,12 @@ button {
   color: var(--color-white);
   border-radius: var(--radius-2xl);
   background-color: var(--color-gray-700);
+  padding: 1.5rem;
+  box-shadow: 0 0 0 2px #a359a5;
+}
+button:hover {
+  background-color: #a359a5;
+  box-shadow: 0 0 0 2px var(--color-gray-700);
 }
 .item {
   margin-top: 2rem;
