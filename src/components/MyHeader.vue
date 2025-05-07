@@ -3,10 +3,8 @@
     <div class="flex gap-4">
       <router-link :to="{ path: '/' }">Accueil</router-link>
       <router-link :to="{ path: 'about' }">A propos</router-link>
-
-      <span>Skills</span>
-      <span>Mes Projets</span>
-      <span>Contact</span>
+      <router-link :to="{ path: 'skills' }">Skills</router-link>
+      <router-link :to="{ path: 'projects' }">Portfolio</router-link>
     </div>
     <div class="flex gap-4">
       <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-16" />
