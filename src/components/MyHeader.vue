@@ -8,8 +8,8 @@
       <span>Contact</span>
     </div>
     <div class="flex gap-4">
-      <img src="@/assets/icons/git.svg" alt="" class="size-16" />
-      <img src="@/assets/icons/link.svg" alt="" class="size-16" />
+      <img src="@/assets/icons/cons-github.svg" alt="" class="size-16" />
+      <img src="@/assets/icons/cons-link.svg" alt="" class="size-16" />
     </div>
   </div>
 </template>
