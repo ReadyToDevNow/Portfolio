@@ -1,9 +1,13 @@
 <script setup>
+import MyHeader from '@/components/MyHeader.vue'
+import MyFooter from '@/components/MyFooter.vue'
 import LandingPage from '@/components/LandingPage.vue'
 </script>
 
 <template>
-  <main>
+  <body class="flex flex-col min-h-screen">
+    <MyHeader />
     <LandingPage />
-  </main>
+    <MyFooter />
+  </body>
 </template>

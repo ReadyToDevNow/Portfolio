@@ -1,7 +1,4 @@
 <script setup>
-import MyHeader from './MyHeader.vue'
-import MyFooter from './MyFooter.vue'
-
 function githubLink() {
   window.open('https://github.com/ReadyToDevNow', '_blank')
 }
@@ -11,36 +8,28 @@ function sendMail() {
 </script>
 
 <template>
-  <body class="flex flex-col min-h-screen">
-    <header>
-      <MyHeader />
-    </header>
-    <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center">
-      <div class="flex flex-col mb-4">
-        <span class="text-3xl">Hello, I'm Mehdi, </span>
-        <span class="text-3xl">a web developer</span>
-      </div>
-      <div class="flex flex-col mb-4">
-        <span>Passionné de longue date,</span>
-        <span>Spécialiste en Vue Js</span>
-      </div>
-      <!--Section Buttons -->
-      <div class="flex gap-4">
-        <button>Mes Projets</button>
-        <button @click="githubLink" class="flex gap-2 items-center">
-          <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
-          <span>Github</span>
-        </button>
-        <button @click="sendMail" class="flex gap-2 items-center">
-          <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
-          <span>Contact</span>
-        </button>
-      </div>
-    </main>
-    <footer>
-      <MyFooter />
-    </footer>
-  </body>
+  <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center">
+    <div class="flex flex-col mb-4">
+      <span class="text-3xl">Hello, I'm Mehdi, </span>
+      <span class="text-3xl">a web developer</span>
+    </div>
+    <div class="flex flex-col mb-4">
+      <span>Passionné de longue date,</span>
+      <span>Spécialiste en Vue Js</span>
+    </div>
+    <!--Section Buttons -->
+    <div class="flex gap-4">
+      <button>Mes Projets</button>
+      <button @click="githubLink" class="flex gap-2 items-center">
+        <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
+        <span>Github</span>
+      </button>
+      <button @click="sendMail" class="flex gap-2 items-center">
+        <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
+        <span>Contact</span>
+      </button>
+    </div>
+  </main>
 </template>
 
 <style scoped>
