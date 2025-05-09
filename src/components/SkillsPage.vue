@@ -2,7 +2,8 @@
   <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center">
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
-      <span class="p-4">Barre de recherche</span>
+      <input placeholder="Rechercher..." />
+
       <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4">
         <button>HTML 5</button>
         <button>CSS3</button>
