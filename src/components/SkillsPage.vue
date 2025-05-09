@@ -3,30 +3,18 @@
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <input placeholder="Rechercher..." />
-
       <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4">
-        <button>HTML 5</button>
-        <button>CSS3</button>
-        <button>Javascript</button>
-        <button>Vue.Js</button>
-        <button>Vite</button>
-        <button>Tailwind</button>
-        <button>Pinia</button>
-        <button>Canvas</button>
-        <button>NodeJs</button>
-        <button>React</button>
-        <button>Gitlab</button>
-        <button>Primevue</button>
-        <button>Windows</button>
-        <button>Emacs</button>
-        <button>Unity</button>
-        <button>C</button>
+        <div v-for="skill in skills" :key="skill">
+          <button>{{ skill.technologie }}</button>
+        </div>
       </div>
     </div>
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+import { skills } from '@/services/MySkills'
+</script>
 
 <style scoped>
 button {
