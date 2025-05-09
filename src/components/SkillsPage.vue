@@ -3,7 +3,7 @@
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <span class="p-4">Barre de recherche</span>
-      <div class="grid grid-cols-3 gap-6 p-4">
+      <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4">
         <button>HTML 5</button>
         <button>CSS3</button>
         <button>Javascript</button>
@@ -13,12 +13,13 @@
         <button>Pinia</button>
         <button>Canvas</button>
         <button>NodeJs</button>
-        <button>Windows</button>
         <button>React</button>
-        <button>Github</button>
-        <button>Githlab</button>
+        <button>Gitlab</button>
         <button>Primevue</button>
-        <button>Excel</button>
+        <button>Windows</button>
+        <button>Emacs</button>
+        <button>Unity</button>
+        <button>C</button>
       </div>
     </div>
   </main>
@@ -29,5 +30,10 @@
 <style scoped>
 button {
   background-color: rgba(0, 0, 255, 0.393);
+  width: calc(var(--spacing) * 40);
+  border-radius: 0.25rem;
+  color: white;
+  height: 2.3rem;
+  box-shadow: var(--shadow-xl);
 }
 </style>
