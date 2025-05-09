@@ -1,92 +1,87 @@
 export const skills = [
   {
-    technologie: 'HTML 5',
-    name: 'Html5',
-    description: 'Langage de balisage utilisé pour structurer le contenu des pages web modernes.',
+    name: 'Html 5',
+    technologie: 'Frontend',
+    description: 'Cours en ligne ',
   },
   {
-    technologie: 'CSS3',
-    name: 'Css3',
-    description: 'Feuilles de style en cascade pour la mise en forme et l’animation des pages web.',
+    name: 'Css 3',
+    technologie: 'Frontend',
+    description: 'Cours en ligne',
   },
   {
-    technologie: 'Javascript',
     name: 'Javascript',
-    description:
-      'Langage de programmation permettant de rendre les pages web interactives et dynamiques.',
+    technologie: 'Frontend',
+    description: 'Cours en ligne',
   },
   {
-    technologie: 'Vue.Js',
-    name: 'Vuejs',
-    description:
-      'Framework JavaScript progressif pour construire des interfaces utilisateur réactives.',
+    name: 'Vue.js',
+    technologie: 'Frontend',
+    description: 'Développeur chez Free Throw et cours en ligne',
   },
   {
-    technologie: 'Vite',
     name: 'Vite',
-    description:
-      'Outil de build rapide et moderne pour les projets front-end, optimisé pour Vue, React, etc.',
+    technologie: 'Frontend',
+    description: 'Développeur chez Free Throw',
   },
   {
-    technologie: 'Tailwind',
     name: 'Tailwind',
-    description:
-      'Framework CSS utilitaire permettant de créer des designs personnalisés rapidement.',
+    technologie: 'Frontend',
+    description: 'Développeur chez Free Throw et cours en ligne',
   },
   {
-    technologie: 'Pinia',
     name: 'Pinia',
-    description: 'Gestionnaire d’état léger et moderne pour les applications Vue.js.',
+    technologie: 'Pinia',
+    description: 'Développeur chez Free Throw',
   },
   {
-    technologie: 'Canvas',
     name: 'Canvas',
-    description:
-      'API HTML5 permettant de dessiner des graphiques et animations en 2D dans le navigateur.',
+    technologie: 'Design',
+    description: 'Cours en ligne',
   },
   {
+    name: 'Node.js',
     technologie: 'NodeJs',
-    name: 'Nodejs',
-    description:
-      'Environnement d’exécution JavaScript côté serveur pour créer des applications back-end.',
+    description: 'Développeur junior chez Free Throw',
   },
   {
-    technologie: 'React',
     name: 'React',
-    description:
-      'Bibliothèque JavaScript pour construire des interfaces utilisateur interactives et modulaires.',
+    technologie: 'Frontend',
+    description: 'Cours en ligne',
   },
   {
-    technologie: 'Gitlab',
     name: 'Gitlab',
-    description:
-      'Plateforme DevOps pour la gestion du code source, CI/CD et collaboration sur les projets.',
+    technologie: 'Gitlab',
+    description: 'Développeur junior chez Free Throw et cours en ligne',
   },
   {
-    technologie: 'Primevue',
     name: 'Primevue',
-    description:
-      'Bibliothèque de composants UI riche pour Vue.js, facilitant la création d’interfaces élégantes.',
+    technologie: 'Frontend',
+    description: 'Développeur junior chez Free Throw',
   },
   {
-    technologie: 'Windows',
     name: 'Windows',
+    technologie: 'Système',
     description: 'Système d’exploitation développé par Microsoft, largement utilisé sur PC.',
   },
   {
-    technologie: 'Emacs',
     name: 'Emacs',
-    description: 'Éditeur de texte extensible et personnalisable, populaire chez les développeurs.',
+    technologie: 'Integrated environmental engineering',
+    description: 'École Epitech',
   },
   {
-    technologie: 'Unity',
+    name: 'Visual Studio Code',
+    technologie: 'Integrated environmental engineering',
+    description: 'École Epitech',
+  },
+  {
     name: 'Unity',
-    description: 'Moteur de jeu multiplateforme pour le développement de jeux vidéo 2D et 3D.',
+    technologie: 'Moteur de jeu',
+    description: 'Cours en ligne ',
   },
   {
-    technologie: 'C',
     name: 'C',
-    description:
-      'Langage de programmation bas niveau performant, utilisé pour le développement système et embarqué.',
+    technologie: 'Programmation système',
+    description: 'École Epitech',
   },
 ]

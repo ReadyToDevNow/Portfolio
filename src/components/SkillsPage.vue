@@ -5,7 +5,7 @@
       <input placeholder="Rechercher..." />
       <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4">
         <div v-for="skill in skills" :key="skill">
-          <button>{{ skill.technologie }}</button>
+          <button>{{ skill.name }}</button>
         </div>
       </div>
     </div>
