@@ -3,17 +3,28 @@
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <input placeholder="Rechercher..." />
-      <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4">
-        <div v-for="(skill, idx) in skills" :key="skill">
-          <button @click="showDropdown[idx] = !showDropdown[idx]">
+      <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4 items-center justify-center">
+        <div
+          v-for="(skill, idx) in skills"
+          :key="skill"
+          class="relative flex flex-col items-center"
+        >
+          <button @click="showDropdown[idx] = !showDropdown[idx]" class="relative">
             <span>{{ skill.name }} ▼</span>
-            <div
-              v-if="showDropdown[idx]"
-              style="background: #fff; border: 1px solid #ccc; margin-top: 4px; min-width: 120px"
-            >
-              <span class="p-2 text-black">{{ skill.technologie }}</span>
-            </div>
           </button>
+          <div
+            v-if="showDropdown[idx]"
+            class="absolute top-full mt-2 bg-white border border-gray-300 rounded z-50"
+          >
+            <div class="flex flex-col items-center justify-center text-xs p-2">
+              <span class="text-black font-bold whitespace-nowrap">
+                {{ skill.description }}
+              </span>
+              <span class="text-black whitespace-nowrap">
+                {{ skill.technologie }}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -30,10 +41,10 @@ const showDropdown = ref(skills.map(() => false))
 <style scoped>
 button {
   background-color: rgba(0, 0, 255, 0.393);
-  width: calc(var(--spacing) * 40);
+  width: calc(var(--spacing) * 42);
   border-radius: 0.25rem;
   color: white;
-  height: 2.3rem;
+  height: 2.6rem;
   box-shadow: var(--shadow-xl);
   border: none;
   cursor: pointer;
@@ -43,34 +54,5 @@ button {
 button:hover,
 button:focus {
   background-color: #2980b9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  min-width: 160px;
-  display: none;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  display: none;
-
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
 }
 </style>

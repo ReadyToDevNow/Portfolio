@@ -17,22 +17,22 @@ export const skills = [
   {
     name: 'Vue.js',
     technologie: 'Frontend',
-    description: 'Développeur chez Free Throw et cours en ligne',
+    description: 'En entreprise et cours en ligne',
   },
   {
     name: 'Vite',
     technologie: 'Frontend',
-    description: 'Développeur chez Free Throw',
+    description: 'En entreprise',
   },
   {
     name: 'Tailwind',
     technologie: 'Frontend',
-    description: 'Développeur chez Free Throw et cours en ligne',
+    description: 'En entreprise et cours en ligne',
   },
   {
     name: 'Pinia',
     technologie: 'Pinia',
-    description: 'Développeur chez Free Throw',
+    description: 'En entreprise',
   },
   {
     name: 'Canvas',
@@ -42,7 +42,7 @@ export const skills = [
   {
     name: 'Node.js',
     technologie: 'NodeJs',
-    description: 'Développeur junior chez Free Throw',
+    description: 'En entreprise',
   },
   {
     name: 'React',
@@ -52,18 +52,14 @@ export const skills = [
   {
     name: 'Gitlab',
     technologie: 'Gitlab',
-    description: 'Développeur junior chez Free Throw et cours en ligne',
+    description: 'En entreprise et cours en ligne',
   },
   {
     name: 'Primevue',
     technologie: 'Frontend',
-    description: 'Développeur junior chez Free Throw',
+    description: 'En entreprise',
   },
-  {
-    name: 'Windows',
-    technologie: 'Système',
-    description: 'Système d’exploitation développé par Microsoft, largement utilisé sur PC.',
-  },
+
   {
     name: 'Emacs',
     technologie: 'Integrated environmental engineering',
