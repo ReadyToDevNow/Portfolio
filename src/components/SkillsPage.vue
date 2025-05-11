@@ -39,26 +39,20 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const showDropdown = ref(skills.map(() => false))
 
-const dropdownRefs = ref([])
-
 function toggleDropdown(idx) {
   // On ferme tous les dropdowns sauf celui cliqué
   showDropdown.value = showDropdown.value.map((open, i) => (i === idx ? !open : false))
 }
 
-function handleClickOutside(event) {
-  showDropdown.value.forEach((open, idx) => {
-    if (open && dropdownRefs.value[idx] && !dropdownRefs.value[idx].contains(event.target)) {
-      showDropdown.value[idx] = false
-    }
-  })
+function closeDropdowns() {
+  showDropdown.value = showDropdown.value.map(() => false)
 }
 
 onMounted(() => {
-  document.addEventListener('mousedown', handleClickOutside)
+  document.addEventListener('mousedown', closeDropdowns)
 })
 onBeforeUnmount(() => {
-  document.removeEventListener('mousedown', handleClickOutside)
+  document.removeEventListener('mousedown', closeDropdowns)
 })
 </script>
 
