@@ -3,7 +3,9 @@
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <input placeholder="Rechercher..." />
-      <div class="shadow-xl rounded grid grid-cols-4 gap-6 p-4 items-center justify-center">
+      <div
+        class="shadow-xl rounded grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 p-4 items-center justify-center"
+      >
         <div
           v-for="(skill, idx) in skills"
           :key="skill"
