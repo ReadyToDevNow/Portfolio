@@ -11,7 +11,7 @@
           :key="skill"
           class="relative flex flex-col items-center"
         >
-          <button @click="showDropdown[idx] = !showDropdown[idx]" class="relative">
+          <button @click="toggleDropdown(idx)" class="relative">
             <span>{{ skill.name }} ▼</span>
           </button>
           <div
@@ -35,9 +35,31 @@
 
 <script setup>
 import { skills } from '@/services/MySkills'
-import { ref } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const showDropdown = ref(skills.map(() => false))
+
+const dropdownRefs = ref([])
+
+function toggleDropdown(idx) {
+  // On ferme tous les dropdowns sauf celui cliqué
+  showDropdown.value = showDropdown.value.map((open, i) => (i === idx ? !open : false))
+}
+
+function handleClickOutside(event) {
+  showDropdown.value.forEach((open, idx) => {
+    if (open && dropdownRefs.value[idx] && !dropdownRefs.value[idx].contains(event.target)) {
+      showDropdown.value[idx] = false
+    }
+  })
+}
+
+onMounted(() => {
+  document.addEventListener('mousedown', handleClickOutside)
+})
+onBeforeUnmount(() => {
+  document.removeEventListener('mousedown', handleClickOutside)
+})
 </script>
 
 <style scoped>
