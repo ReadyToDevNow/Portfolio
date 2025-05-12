@@ -31,7 +31,7 @@ export const skills = [
   },
   {
     name: 'Pinia',
-    technologie: 'Pinia',
+    technologie: 'Backend',
     description: 'En entreprise',
   },
   {
@@ -41,7 +41,7 @@ export const skills = [
   },
   {
     name: 'Node.js',
-    technologie: 'NodeJs',
+    technologie: 'Backend',
     description: 'En entreprise',
   },
   {
@@ -51,7 +51,7 @@ export const skills = [
   },
   {
     name: 'Gitlab',
-    technologie: 'Gitlab',
+    technologie: 'Front / back',
     description: 'En entreprise et cours en ligne',
   },
   {
@@ -61,16 +61,6 @@ export const skills = [
   },
 
   {
-    name: 'Emacs',
-    technologie: 'Integrated environmental engineering',
-    description: 'École Epitech',
-  },
-  {
-    name: 'Visual Studio Code',
-    technologie: 'Integrated environmental engineering',
-    description: 'École Epitech',
-  },
-  {
     name: 'Unity',
     technologie: 'Moteur de jeu',
     description: 'Cours en ligne ',
@@ -78,6 +68,16 @@ export const skills = [
   {
     name: 'C',
     technologie: 'Programmation système',
+    description: 'École Epitech',
+  },
+  {
+    name: 'Emacs',
+    technologie: 'Integrated environmental engineering',
+    description: 'École Epitech',
+  },
+  {
+    name: 'Visual Studio Code',
+    technologie: 'Integrated environmental engineering',
     description: 'École Epitech',
   },
 ]
