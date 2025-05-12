@@ -11,7 +11,7 @@
           :key="skill"
           class="relative flex flex-col items-center"
         >
-          <button @click="toggleDropdown(idx)" class="relative">
+          <button @mousedown.stop @click="toggleDropdown(idx)" class="relative">
             <span>{{ skill.name }} ▼</span>
           </button>
           <div
