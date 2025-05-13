@@ -3,27 +3,37 @@
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <!-- Barre de recherche -->
-      <div class="border relative mb-4">
+      <div class="relative border mb-4">
         <input
           v-model="search"
-          placeholder="Rechercher une technologie..."
+          placeholder="Rechercher une compétence..."
           @focus="onInputFocus"
-          class="relative top-full"
+          class="px-4 py-2 border rounded pr-10"
         />
-        <button v-if="search" @click="clearSearch" class="w-auto">❌</button>
-      </div>
-      <!-- Suggestion de technologies Dynamique -->
-      <div v-if="showSuggestions" class="bg-white border border-gray-300 rounded shadow z-50">
-        <ul class="relative">
-          <li
-            v-for="(tech, i) in filteredSuggestions"
-            :key="i"
-            class="relative px-4 py-2 hover:bg-gray-100 cursor-pointer text-xs whitespace-nowrap"
-            @click="selectSuggestion(tech)"
-          >
-            {{ tech }}
-          </li>
-        </ul>
+        <!-- Boutton effacer -->
+        <button
+          @click="clearSearch"
+          class="absolute right-3 top-2.5 text-gray-500 hover:text-black"
+        >
+          ❌
+        </button>
+
+        <!-- Suggestion de technologies Dynamique -->
+        <div
+          v-if="showSuggestions"
+          class="absolute top-full bg-white border border-gray-300 rounded shadow z-50"
+        >
+          <ul class="">
+            <li
+              v-for="(tech, i) in filteredSuggestions"
+              :key="i"
+              @click="selectSuggestion(tech)"
+              class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-xs whitespace-nowrap"
+            >
+              {{ tech }}
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- Liste de skills filtrée -->
       <div
