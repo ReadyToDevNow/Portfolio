@@ -3,27 +3,26 @@
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <!-- Barre de recherche -->
-      <div class="relative border mb-4">
+      <div class="relative mb-4">
         <input
           v-model="search"
           placeholder="Rechercher une compétence..."
           @focus="onInputFocus"
           class="px-4 py-2 border rounded pr-10"
         />
-        <!-- Boutton effacer -->
+        <!-- Boutton effacer les suggestions  -->
         <button
           @click="clearSearch"
           class="absolute right-3 top-2.5 text-gray-500 hover:text-black"
         >
           ❌
         </button>
-
         <!-- Suggestion de technologies Dynamique -->
         <div
           v-if="showSuggestions"
           class="absolute top-full bg-white border border-gray-300 rounded shadow z-50"
         >
-          <ul class="">
+          <ul>
             <li
               v-for="(tech, i) in filteredSuggestions"
               :key="i"
@@ -110,7 +109,7 @@ function onInputFocus() {
 
 function clearSearch() {
   search.value = ''
-  showSuggestions.value = true
+  showSuggestions.value = false
 }
 
 function toggleDropdown(idx) {
