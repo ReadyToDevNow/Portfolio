@@ -2,7 +2,7 @@
   <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center border">
     <h2 class="text-3xl mb-4">A Propos</h2>
     <div class="grid grid-cols-2">
-      <div class="flex flex-col text-xl text-justify ml-12 p-2">
+      <div class="flex flex-col text-xl text-justify ml-40 p-2">
         <span class="mb-4"
           >Passionné par la tech et la création depuis toujours, j'ai décidé il y a cinq ans de me
           reconvertir dans le développement web. J'ai commencé par une année à Epitech, où j'ai
@@ -13,7 +13,7 @@
         <span class="mb-4"
           >J'ai ensuite continué à me former de manière autodidacte grâce à des formations en ligne
           (OpenClassrooms, Udemy, YouTube…). J'ai appris HTML, CSS, JavaScript et React, puis je me
-          suis spécialisé en Vue.js, que j'utilise aujourd'hui dans mes projets.
+          suis spécialisé en Vue.js.
         </span>
         <span class="mb-4">
           Je suis curieux, et j'aime créer des interfaces modernes qui répondent à des besoins
@@ -21,8 +21,12 @@
           motivants, seul ou en équipe.</span
         >
         <div class="flex justify-between mt-4">
-          <button class="button">Mes skills</button>
-          <button class="button">Mes Projets</button>
+          <router-link :to="{ path: '/skills' }">
+            <button class="button">Mes skills</button>
+          </router-link>
+          <router-link :to="{ path: '/projects' }">
+            <button class="button">Mes Projets</button>
+          </router-link>
         </div>
       </div>
 
