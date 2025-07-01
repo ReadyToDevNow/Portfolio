@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'Jeu Pokemon',
+    title: 'Jeu ',
     technologie: 'Vue.js | JS | Tyradex API',
     image: 'src/assets/poke.png',
     description:
@@ -15,6 +15,7 @@ export const projects = [
   },
   {
     title: 'NovaKit',
+
     technologie: 'Vue.js | JS | HTML| CSS',
     image: 'src/assets/novakit.png',
     description:

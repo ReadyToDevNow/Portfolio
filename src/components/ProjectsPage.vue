@@ -6,39 +6,41 @@
         Ci-dessous, quelques exemples de réalisations effectuées durant ma vie de developpeur
       </span>
     </div>
-    <div class="grid grid-cols-4 bg p-2">
+    <div class="grid grid-cols-4 bg p-2 mb-10">
       <div v-for="project in projects" :key="project" class="flex flex-col items-center p-4">
         <span class="font-bold"> {{ project.title }}</span>
+        <span class="mb-4"> {{ project.soustitre }}</span>
         <span class="mb-4"> {{ project.technologie }}</span>
-        <img :src="project.image" :alt="project.title" class="h-49" />
+        <img :src="project.image" :alt="project.title" class="h-49 rounded" />
       </div>
     </div>
-    <!-- Les Cards Projects-->
+    <!-- Les différents projet en itération 
     <div class="grid grid-cols-4 bg p-2">
       <div class="flex flex-col items-center p-4">
         <span class="font-bold">Jeu Pokémon</span>
         <span class="mb-4">Vue.js | JS | Tyradex API | tailwindcss</span>
         <img src="@/assets/poke.png" class="h-49" alt="" />
       </div>
-      <!-- 2ème projet-->
+      
       <div class="flex flex-col items-center p-4">
         <span class="font-bold">Titre</span>
         <span class="mb-4">Technologie utilisé</span>
         <img src="@/assets/novakit.png" class="h-49" alt="" />
       </div>
-      <!--3ème projet-->
+     
       <div class="flex flex-col items-center p-4">
         <span class="font-bold">Titre</span>
         <span class="mb-4">Technologie utilisé</span>
         <img src="@/assets/poke.png" class="h-49" alt="" />
       </div>
-      <!--4 ème projet-->
+      
       <div class="flex flex-col items-center p-4">
         <span class="font-bold">Titre</span>
         <span class="mb-4">Technologie utilisé</span>
         <img src="@/assets/portfolio.png" class="h-49" alt="" />
       </div>
     </div>
+    -->
   </main>
 </template>
 
