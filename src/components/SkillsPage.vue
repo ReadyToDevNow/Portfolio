@@ -131,7 +131,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .button {
-  background-color: rgba(0, 0, 255, 0.393);
+  background-color: rgba(37, 37, 85, 0.543);
   width: calc(var(--spacing) * 42);
   border-radius: 0.25rem;
   color: white;

@@ -1,4 +1,10 @@
 @import 'tailwindcss';
+span,
+p,
+h2 {
+  color: azure;
+}
+
 /*@import './base.css';
 
 #app {

@@ -55,4 +55,7 @@
 main {
   background: linear-gradient(135deg, #2b338b 0%, #b873ba 100%);
 }
+span {
+  text-size-adjust: 100%;
+}
 </style>
