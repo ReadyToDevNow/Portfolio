@@ -4,10 +4,10 @@
     <div class="grid grid-cols-2">
       <div class="flex flex-col text-xl text-justify ml-40 p-2">
         <span class="mb-4"
-          >Passionné par la tech et la création depuis toujours, j'ai décidé il y a cinq ans de me
-          reconvertir dans le développement web. J'ai commencé par une année à Epitech, où j'ai
-          appris le langage C et les bases de la programmation. En parallèle, j'ai développé des
-          petits jeux avec Unity, ce qui m'a donné envie d'en apprendre plus.</span
+          >Passionné par la tech, la création et le gaming depuis toujours, j'ai décidé il y a cinq
+          ans de me reconvertir dans le développement web. J'ai commencé par une année à Epitech, où
+          j'ai appris le langage C et les bases de la programmation. En parallèle, j'ai développé
+          des petits jeux avec Unity, ce qui m'a donné envie d'en apprendre plus.</span
         >
 
         <span class="mb-4"
@@ -16,10 +16,17 @@
           suis spécialisé en Vue.js.
         </span>
         <span class="mb-4">
+          Depuis Janvier 2024 j'ai eu la chance de progresser en tant que Développeur front-end au
+          coté d'un senior avec plus de 10 années d'expertise. Ensemble nous avons construit un
+          projet concret en Vue.js: un dashboard permettant de visualiser et de gerer un parc
+          informatique.
+        </span>
+        <span class="mb-4">
           Je suis curieux, et j'aime créer des interfaces modernes qui répondent à des besoins
-          concrets. Je continue d'apprendre chaque jour et je cherche à m'impliquer dans des projets
-          motivants, seul ou en équipe.</span
+          concrets. Je continue d'apprendre chaque jour et cherche à m'impliquer dans des projets
+          .</span
         >
+
         <div class="flex justify-between mt-4">
           <router-link :to="{ path: '/skills' }">
             <button class="button">Mes skills</button>
