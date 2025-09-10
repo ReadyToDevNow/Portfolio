@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center">
+  <main class="flex flex-grow flex-col items-center justify-center">
     <div class="flex flex-col mb-4 items-center">
       <span class="text-4xl p-4">Mes skills </span>
       <!-- Barre de recherche -->
@@ -8,7 +8,7 @@
           v-model="search"
           placeholder="Rechercher une compétence..."
           @focus="onInputFocus"
-          class="px-4 py-2 border rounded pr-10"
+          class="px-4 py-2 rounded pr-10 bg-white"
         />
         <!-- Boutton effacer les suggestions  -->
         <button

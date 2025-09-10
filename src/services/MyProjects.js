@@ -22,7 +22,7 @@ export const projects = [
       "Market place d'assets digital pour créer un site ou un jeux vidéos avec des ressources simple d'accès ",
   },
   {
-    title: 'Portofilio',
+    title: 'Portfolio',
     technologie: 'Vue.js | JS | HTML| Tailwindcss',
     image: 'src/assets/portfolio.png',
     description:

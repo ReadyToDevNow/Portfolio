@@ -1,12 +1,12 @@
 <template>
-  <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center">
+  <main class="flex flex-grow flex-col items-center justify-center">
     <div class="flex flex-col items-center justify-center mb-4">
       <span class="text-3xl font-bold mb-2">Mes projets</span>
       <span class="text-xs">
         Ci-dessous, quelques exemples de réalisations effectuées durant ma vie de developpeur
       </span>
     </div>
-    <div class="grid grid-cols-4 bg p-2 mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 bg p-2 mb-10 shadow-2xl">
       <div v-for="project in projects" :key="project" class="flex flex-col items-center p-4">
         <span class="font-bold"> {{ project.title }}</span>
         <span class="mb-4"> {{ project.soustitre }}</span>
@@ -48,10 +48,7 @@
 import { projects } from '@/services/MyProjects'
 </script>
 
-<style>
-.bg {
-  background-color: rgba(240, 240, 240, 0.393);
-}
+<style scoped>
 main {
   background: linear-gradient(135deg, #2b338b 0%, #b873ba 100%);
 }

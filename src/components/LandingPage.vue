@@ -8,26 +8,28 @@ function sendMail() {
 </script>
 
 <template>
-  <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center">
-    <div class="flex flex-col mb-4">
-      <span class="text-3xl">Hello, I'm Mehdi, </span>
-      <span class="text-3xl">a web developer</span>
-    </div>
-    <div class="flex flex-col mb-4">
-      <span>Passionné de longue date,</span>
-      <span>Spécialiste en Vue Js</span>
-    </div>
-    <!--Section Buttons -->
-    <div class="flex gap-4">
-      <button>Mes Projets</button>
-      <button @click="githubLink" class="flex gap-2 items-center">
-        <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
-        <span>Github</span>
-      </button>
-      <button @click="sendMail" class="flex gap-2 items-center">
-        <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
-        <span>Contact</span>
-      </button>
+  <main class="flex flex-grow flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center text-white shadow-2xl p-4 gap-4 rounded">
+      <div class="flex flex-col mb-4">
+        <span class="text-3xl">Hello, I'm Mehdi, </span>
+        <span class="text-3xl">a web developer</span>
+      </div>
+      <div class="flex flex-col mb-4">
+        <span>Passionné de longue date,</span>
+        <span>Spécialiste en Vue Js</span>
+      </div>
+      <!--Section Buttons -->
+      <div class="flex gap-4">
+        <button>Mes Projets</button>
+        <button @click="githubLink" class="flex gap-2 items-center">
+          <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
+          <span>Github</span>
+        </button>
+        <button @click="sendMail" class="flex gap-2 items-center">
+          <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
+          <span>Contact</span>
+        </button>
+      </div>
     </div>
   </main>
 </template>
