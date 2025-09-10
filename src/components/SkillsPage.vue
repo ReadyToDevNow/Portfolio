@@ -146,4 +146,7 @@ button:hover,
 button:focus {
   background-color: #2980b9;
 }
+main {
+  background: linear-gradient(135deg, #2b338b 0%, #b873ba 100%);
+}
 </style>

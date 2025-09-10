@@ -50,6 +50,9 @@ import { projects } from '@/services/MyProjects'
 
 <style>
 .bg {
-  background-color: rgba(0, 0, 255, 0.393);
+  background-color: rgba(240, 240, 240, 0.393);
+}
+main {
+  background: linear-gradient(135deg, #2b338b 0%, #b873ba 100%);
 }
 </style>

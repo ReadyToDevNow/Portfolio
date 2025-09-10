@@ -41,7 +41,7 @@
 
 <script setup></script>
 
-<style>
+<style scoped>
 .button {
   background-color: rgba(0, 0, 255, 0.393);
   width: calc(var(--spacing) * 42);
@@ -51,5 +51,8 @@
   box-shadow: var(--shadow-xl);
   border: none;
   cursor: pointer;
+}
+main {
+  background: linear-gradient(135deg, #2b338b 0%, #b873ba 100%);
 }
 </style>
