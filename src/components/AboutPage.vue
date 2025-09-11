@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col items-center justify-center border">
-    <h2 class="text-3xl mb-2 mt-2">A Propos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:ml-40 p-8 items-center justify-center">
+    <h2 class="text-3xl mt-2">A Propos</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:ml-40 p-8 items-center justify-center">
       <div class="flex flex-col text-xl text-justify">
         <span class="mb-4"
           >Passionné par la tech, la création et le gaming depuis toujours, j'ai décidé il y a cinq
@@ -35,11 +35,7 @@
         </div>
       </div>
 
-      <img
-        src="@/assets/profil-picture.jpg"
-        alt="photo de profil"
-        class="w-120 ml-12 rounded shadow-xl"
-      />
+      <img src="@/assets/profil-picture.jpg" alt="photo de profil" class="lg:ml-8 p-8" />
     </div>
   </main>
 </template>
