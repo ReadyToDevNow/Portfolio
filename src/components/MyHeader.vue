@@ -1,6 +1,6 @@
 <template>
   <div class="flex p-4 items-center justify-between">
-    <div class="flex gap-4 flex-wrap">
+    <div class="flex gap-2 sm:gap-4 flex-wrap">
       <router-link :to="{ path: '/' }">Accueil</router-link>
       <router-link :to="{ path: 'about' }">A propos</router-link>
       <router-link :to="{ path: 'skills' }">Skills</router-link>
