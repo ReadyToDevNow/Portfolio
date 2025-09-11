@@ -15,7 +15,6 @@ export const projects = [
   },
   {
     title: 'NovaKit',
-
     technologie: 'Vue.js | JS | HTML| CSS',
     image: 'src/assets/novakit.jpg',
     description:

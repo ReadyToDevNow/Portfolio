@@ -20,11 +20,11 @@ function sendMail() {
       <!--Section Buttons -->
       <div class="flex gap-4">
         <button>Mes Projets</button>
-        <button @click="githubLink" class="flex gap-2 items-center">
+        <button @click="githubLink" class="flex gap-2 justify-center items-center">
           <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
           <span>Github</span>
         </button>
-        <button @click="sendMail" class="flex gap-2 items-center">
+        <button @click="sendMail" class="flex gap-2 justify-center items-center">
           <img src="@/assets/icons/icon-github.svg" alt="icon-github" class="size-8" />
           <span>Contact</span>
         </button>
