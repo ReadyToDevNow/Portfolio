@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-gray-300 flex flex-grow flex-col items-center justify-center border">
+  <main class="flex flex-col items-center justify-center border">
     <h2 class="text-3xl mb-4">A Propos</h2>
     <div class="grid grid-cols-2">
       <div class="flex flex-col text-xl text-justify ml-40 p-2">
