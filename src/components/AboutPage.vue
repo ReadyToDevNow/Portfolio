@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col items-center justify-center border">
     <h2 class="text-3xl mt-2">A Propos</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 lg:ml-40 p-8 items-center justify-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:ml-20 p-8 items-center justify-center">
       <div class="flex flex-col text-xl text-justify">
         <span class="mb-4"
           >Passionné par la tech, la création et le gaming depuis toujours, j'ai décidé il y a cinq

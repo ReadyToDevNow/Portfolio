@@ -1,11 +1,11 @@
 <template>
-  <div class="flex p-4 items-center justify-between">
+  <div class="flex p-4 items-center justify-between text-purple-900">
     <div class="flex gap-2 sm:gap-4 flex-wrap">
-      <router-link :to="{ path: '/' }">Accueil</router-link>
-      <router-link :to="{ path: 'about' }">A propos</router-link>
-      <router-link :to="{ path: 'skills' }">Skills</router-link>
-      <router-link :to="{ path: 'projects' }">Portfolio</router-link>
-      <router-link :to="{ path: 'contact' }">Contact</router-link>
+      <router-link :to="{ path: '/' }" class="title">Accueil</router-link>
+      <router-link :to="{ path: 'about' }" class="title">A propos</router-link>
+      <router-link :to="{ path: 'skills' }" class="title">Skills</router-link>
+      <router-link :to="{ path: 'projects' }" class="title">Portfolio</router-link>
+      <router-link :to="{ path: 'contact' }" class="title">Contact</router-link>
     </div>
     <div class="flex gap-4">
       <img
@@ -33,4 +33,12 @@ function githubLink() {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.bg {
+  background: linear-gradient(180deg, #3c49ce45 0%, #dcbadd 100%);
+}
+.title:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+</style>
