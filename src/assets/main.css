@@ -4,6 +4,9 @@ p,
 h2 {
   color: azure;
 }
+main {
+  font-family: cursive;
+}
 
 /*@import './base.css';
 

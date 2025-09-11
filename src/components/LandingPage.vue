@@ -11,12 +11,11 @@ function sendMail() {
   <main class="flex flex-grow flex-col items-center justify-center">
     <div class="flex flex-col items-center justify-center text-white shadow-2xl p-4 gap-4 rounded">
       <div class="flex flex-col mb-4">
-        <span class="text-3xl">Hello, I'm Mehdi, </span>
-        <span class="text-3xl">a web developer</span>
+        <h2 class="text-3xl">Hello, I'm Mehdi</h2>
+        <h2 class="text-3xl">a web developer</h2>
       </div>
       <div class="flex flex-col mb-4">
-        <span>Passionné de longue date,</span>
-        <span>Spécialiste en Vue Js</span>
+        <h3 class="text-xl">Welcome</h3>
       </div>
       <!--Section Buttons -->
       <div class="flex gap-4">
@@ -64,13 +63,6 @@ i {
   width: 32px;
   height: 32px;
   color: var(--color-text);
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: var(--color-heading);
 }
 
 @media (min-width: 1024px) {
