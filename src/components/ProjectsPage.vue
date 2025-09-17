@@ -8,8 +8,8 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 bg p-2 mb-10 shadow-2xl">
       <div v-for="project in projects" :key="project" class="flex flex-col items-center p-4">
-        <span class="font-bold"> {{ project.title }}</span>
-        <span class="mb-4"> {{ project.soustitre }}</span>
+        <span class="mb-4 font-bold"> {{ project.title }}</span>
+
         <span class="mb-4"> {{ project.technologie }}</span>
         <img :src="project.image" :alt="project.title" class="h-49 rounded" />
       </div>

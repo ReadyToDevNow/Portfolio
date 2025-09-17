@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Jeu ',
     technologie: 'Vue.js | JS | Tyradex API',
-    image: 'src/assets/poke.jpg',
+    image: './src/assets/poke.jpg',
     description:
       ' Un jeu de mémoire ou le but est de trouver le noms de tout les pokémons le plus rapidement possible avec un système de temps de score et de classements. ',
   },
