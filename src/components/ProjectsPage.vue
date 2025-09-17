@@ -1,8 +1,8 @@
 <template>
   <main class="flex flex-grow flex-col items-center justify-center">
     <div class="flex flex-col items-center justify-center mb-4">
-      <span class="text-3xl font-bold mb-2">Mes projets</span>
-      <span class="text-xs">
+      <span class="text-3xl font-bold mb-2 mt-2">Mes projets</span>
+      <span class="text-sm text-center">
         Ci-dessous, quelques exemples de réalisations effectuées durant ma vie de developpeur
       </span>
     </div>
@@ -11,7 +11,7 @@
         <span class="mb-4 font-bold"> {{ project.title }}</span>
 
         <span class="mb-4"> {{ project.technologie }}</span>
-        <img :src="project.image" :alt="project.title" class="h-49 rounded" />
+        <img :src="project.image" :alt="project.title" class="h-full w-118 rounded" />
       </div>
     </div>
     <!-- Les différents projet en itération 
@@ -51,5 +51,8 @@ import { projects } from '@/services/MyProjects'
 <style scoped>
 main {
   background: linear-gradient(135deg, #2b338b 0%, #b873ba 100%);
+}
+span {
+  color: white;
 }
 </style>
