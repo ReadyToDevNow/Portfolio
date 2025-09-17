@@ -11,7 +11,7 @@
         <span class="mb-4 font-bold"> {{ project.title }}</span>
 
         <span class="mb-4"> {{ project.technologie }}</span>
-        <img :src="project.image" :alt="project.title" class="h-full w-118 rounded" />
+        <img :src="project.image" :alt="project.title" class="h-full w-118 rounded shadow-2xl" />
       </div>
     </div>
     <!-- Les différents projet en itération 
