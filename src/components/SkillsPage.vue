@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-grow flex-col items-center justify-center">
     <div class="flex flex-col mb-4 items-center">
-      <span class="text-4xl p-4">Mes skills </span>
+      <span class="text-4xl text-white p-4">Mes skills </span>
       <!-- Barre de recherche -->
       <div class="relative mb-4">
         <input
